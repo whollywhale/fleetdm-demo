@@ -11,8 +11,7 @@
   query: SELECT 1 FROM uptime WHERE days > 30
   label_membership_type: dynamic
 
-labels:
-  - name: macOS 27 beta testers
-    description: Hosts enrolled in beta program
-    label_membership_type: manual
-    hosts:
+- name: macOS 27 beta testers
+  description: Hosts enrolled in beta program
+  label_membership_type: manual
+  hosts:
