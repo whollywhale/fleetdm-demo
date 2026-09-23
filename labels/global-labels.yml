@@ -1,0 +1,18 @@
+- name: Departmet - Engineering
+  description: Hosts belonging to members of the Engineering department
+  label_membership_type: host_vitals
+  criteria:
+    vital: end_user_idp_department
+    value: Engineerin
+      
+- name: Uptime over 30 days
+  platform: darwin
+  description: Hosts with an uptime greater than 30 days
+  query: SELECT 1 FROM uptime WHERE days > 30
+  label_membership_type: dynamic
+
+labels:
+  - name: macOS 27 beta testers
+    description: Hosts enrolled in beta program
+    label_membership_type: manual
+    hosts:
